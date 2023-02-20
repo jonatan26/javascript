@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMANDO NUMEROS</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        input{
+            
+            width: 100px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="sohar" onclick="somar()">
+    <div id="res">RESULTADO</div>
+    <script>
+        function somar() {
+            var r1 = window.document.getElementById('txtn1')
+            var r2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var t1 = Number(r1.value)
+            var t2 = Number(r2.value)
+            var total = t1 + t2
+            res.innerHTML =(`A soma de ${t1} e ${t2} = ${total}`)
+            if(total % 2 == 0){
+            window.alert('NUMERO PAR');
+            }else{
+                window.alert('NUMERO IMPAR');
+            }
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

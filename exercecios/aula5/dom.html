@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <style>
+        div#a{
+            background-color: #7fffd4;
+            color: black;
+            height: 150px;
+            width: 150px;
+            line-height: 150px;
+            text-align: center;
+
+
+        }
+        
+        
+
+    </style>
+
+</head>
+<body>
+    <div id="a" onclick="clicar()"  onmouseenter="entrar()" onmouseout="sair()">
+        interaja       
+
+
+    </div>
+    <script>
+         var b = window.document.getElementById('a')
+        function clicar(){
+           
+            b.innerHTML="clicou"
+            b.style.background = 'red'
+
+            
+
+
+
+        }
+        function entrar(){
+            b.innerHTML="entrou"
+            b.style.background = 'blue'
+
+        }
+        function sair(){
+            b.innerHTML="saiu";
+            b.style.background = '#7fffd4'
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
